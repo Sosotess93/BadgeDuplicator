@@ -12,7 +12,7 @@
 
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { HomeScreen, NFCReadScreen, NFCWriteScreen } from '../screens';
+import { HomeScreen, NFCReadScreen, NFCWriteScreen, BadgeDetailScreen } from '../screens';
 import { RootStackParamList } from '../types/navigation';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -34,6 +34,15 @@ export function HomeStack() {
                 name="NFCWrite"
                 component={NFCWriteScreen}
                 options={{ title: 'Copie Badge' }}
+            />
+            <Stack.Screen
+                name="BadgeDetail"
+                component={BadgeDetailScreen}
+                options={{
+                    title: 'Détails du Badge',
+                    // Animation de transition card pour un effet plus fluide
+                    animation: 'slide_from_right'
+                }}
             />
         </Stack.Navigator>
     );

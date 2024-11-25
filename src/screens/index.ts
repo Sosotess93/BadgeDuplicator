@@ -15,3 +15,4 @@ export * from './NFCReadScreen';
 export * from './NFCWriteScreen';
 export * from './HistoryScreen';
 export * from './ProfileScreen';
+export * from './BadgeDetailScreen';

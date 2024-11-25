@@ -19,4 +19,6 @@ export const COLORS = {
   border: '#C7C7CC',
   error: '#FF3B30',
   success: '#34C759',
+  white: '#FFFFFF',
+  surface: '#F5F5F5',
 };
