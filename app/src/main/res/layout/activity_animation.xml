@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="20dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/animation" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <WebView android:id="@+id/animationWebView" android:visibility="gone" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <Button android:id="@+id/close_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/animation_close_btn" style="@style/ButtonSecondary"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
